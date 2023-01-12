@@ -88,8 +88,6 @@ export default function RegistrationScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    // alignItems: "center",
-    // justifyContent: "center",
   },
   image: {
     flex: 1,
@@ -105,24 +103,18 @@ const styles = StyleSheet.create({
     color: "#212121",
     textAlign: "center",
     marginBottom: 33,
-    // justifyContent: "center",
-    // alignItems: "center",
   },
   form: {
-    // position: "relative",
     width: "100%",
     paddingHorizontal: 16,
     paddingTop: 92,
     backgroundColor: "#fff",
     borderTopLeftRadius: 25,
     borderTopRightRadius: 25,
-    // marginHorizontal: 40,
   },
   input: {
     fontFamily: "Roboto-Regular",
-    // width: "100%",
-    // marginLeft: 0,
-    // marginRight: 0,
+
     fontSize: 16,
     lineHeight: 19,
     height: 50,
