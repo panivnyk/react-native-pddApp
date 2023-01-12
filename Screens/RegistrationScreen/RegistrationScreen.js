@@ -1,10 +1,3 @@
-// import React from "react";
-// import { View, ImageBackground } from "react-native";
-// import { styles } from "./LoginScreenStyle";
-// <ImageBackground
-//   style={styles.image}
-//   source={require("../img/photoBG.jpg")}
-// ></ImageBackground>;
 import React, { useState } from "react";
 import {
   ImageBackground,
@@ -20,7 +13,13 @@ import {
   Text,
 } from "react-native";
 
-export default function App() {
+const initialState = {
+  login: "",
+  email: "",
+  password: "",
+};
+
+export default function RegistrationScreen() {
   const [login, setLogin] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -50,12 +49,14 @@ export default function App() {
                 value={login}
                 onChangeText={loginHandler}
                 placeholder="Login"
+                placeholderTextColor={"#BDBDBD"}
                 style={styles.input}
               />
               <TextInput
                 value={email}
                 onChangeText={emailHandler}
                 placeholder="E-mail"
+                placeholderTextColor={"#BDBDBD"}
                 secureTextEntry={true}
                 style={styles.input}
               />
@@ -63,6 +64,7 @@ export default function App() {
                 value={password}
                 onChangeText={passwordHandler}
                 placeholder="Password"
+                placeholderTextColor={"#BDBDBD"}
                 secureTextEntry={true}
                 style={styles.input}
               />
